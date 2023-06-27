@@ -14,7 +14,6 @@ int Menu()
     printf("Seleccione una opcion: \n", 162);
     printf("\t1) Ver productos\n");
     printf("\t2) Ingreso de producto\n");
-    // printf("\t3) Modificar productos\n");
     printf("\t3) Ver productos Ingresados:\n");
      printf("\t4) Eliminar Productos\n");
     printf("\t5) Salir\n");
@@ -28,7 +27,7 @@ void mostrarProd(int *id2,  char nombres[][max], char descripciones[][max], char
     printf("---------------------------------------------------------------\n");
     printf("Productos en Inventario:\n");
 
-    for (int i = 0; i < 6; i++)
+    for (int i = 0; i < 7; i++)
         {
         printf("Producto %d:\n", i + 1);
         printf("ID: %d\n", id2[i]);
@@ -48,7 +47,7 @@ void ingresarProd(int *id2, char nombreProd[][max], char descripProd[][max], cha
 
     printf("Ingresar datos para cada producto:\n");
 
-    for (int i = 0; i < 8; i++)
+    for (int i = 0; i < 2; i++)
     {
         printf("Producto %d:\n", i + 1);
 
